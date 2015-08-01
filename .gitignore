@@ -13,3 +13,4 @@ pom.xml.asc
 /resources/public/app
 /resources/public/js
 /resources/public/lib
+.DS_Store
