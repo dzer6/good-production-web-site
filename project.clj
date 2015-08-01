@@ -4,17 +4,18 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure            "1.7.0-RC1"]
+  :dependencies [[org.clojure/clojure            "1.7.0"]
                  [http-kit                       "2.1.19"]
-                 [compojure                      "1.1.6"]
-                 [ring                           "1.3.1"]
-                 [org.clojure/tools.logging      "0.2.6"]
-                 [org.slf4j/slf4j-api            "1.7.7"]
-                 [org.slf4j/log4j-over-slf4j     "1.7.7"]
-                 [ch.qos.logback/logback-classic "1.1.2"]
-                 [org.clojure/clojurescript      "0.0-3308"]
-                 [cljs-http                      "0.1.34"]
-                 [figwheel                       "0.3.3"]
+                 [compojure                      "1.4.0"]
+                 [ring                           "1.4.0"]
+                 [org.clojure/tools.logging      "0.3.1"]
+                 [org.slf4j/slf4j-api            "1.7.12"]
+                 [org.slf4j/log4j-over-slf4j     "1.7.12"]
+                 [ch.qos.logback/logback-classic "1.1.3"]
+                 [org.clojure/clojurescript      "1.7.28"]
+                 [cljs-http                      "0.1.35"]
+                 [com.taoensso/tower             "3.0.2"]
+                 [figwheel                       "0.3.7"]
                  [reagent                        "0.5.0"]]
 
   :main ^:skip-aot good.production.core
@@ -27,7 +28,8 @@
 
   :plugins [[lein-cljsbuild "1.0.6"]
             [lein-figwheel "0.3.3"]
-            [lein-bower "0.5.1"]]
+            [lein-bower "0.5.1"]
+            [lein-ancient "0.6.7"]]
 
   :bower-dependencies [[react "0.13.3"]
                        [bootstrap "3.3.4"]]
