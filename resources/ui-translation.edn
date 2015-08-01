@@ -1,0 +1,97 @@
+{:en {:header "Our team provides professional services in recording, arrangement and composition. We always study the task attentively to make sure we are on the same page with the client and to incorporate all the requests in the final product. Thus, pricing directly depends on the task and the deadline. We are always committing our full efforts to the task. Also our production studio cooperates with many partners, so that we can develop turnkey projects, including video services: filming ads, shorts, promo and music videos, interviews, etc. "
+      :services-header "We provide"
+
+      :services-heading-0 "Webcasting"
+      :services-body-0 "Our team provides webcasting and video streaming services. We broadcast live events, videos & webinars, enabling you to extend the reach, audience and impact of all your events, seminars and training."
+      :services-img-src-0 "img/service-0-wide.png"
+      :services-img-alt-0 "Webcasting"
+
+      :services-heading-1 "Arrangement"
+      :services-body-1 "The art of adapting the musical piece to a different type of performance than originally intended by its author is called music arrangement. So to say, if you have a musical piece, idea or other score that you need to bring to a certain style, manner, instrument types, we can provide specialists who will adapt all your ideas into a refined and professional product."
+      :services-img-src-1 "img/service-1-wide.png"
+      :services-img-alt-1 "Arrangement"
+
+      :services-heading-2 "Composing a musical piece"
+      :services-body-2 "We can compose a jingle or soundtrack for advertising,  TV, movies, computer games or mobile apps. Having agreed upon the reference brief, we will record fully new musical pieces live in the studio or using electronic sample libraries."
+      :services-img-src-2 "img/service-2-wide.png"
+      :services-img-alt-2 "Composing a musical piece"
+
+      :services-heading-3 "Mixing and mastering"
+      :services-body-3 "Audio mixing is the process by which multiple sounds are combined into one or more channels. In the process, the source signals' level, frequency content, dynamics, and panoramic position are manipulated and effects such as reverb may be added. This practical, aesthetic, or otherwise creative treatment is done in order to produce a mix that is more appealing to listeners. Our team of sound engineers works with different materials: music, movies, television programs, concert mixing, etc."
+      :services-img-src-3 "img/service-3-wide.png"
+      :services-img-alt-3 "Sound production"
+
+      :services-heading-4 "Session musicians"
+      :services-body-4 "A session musician generally is engaged for the recording of a song or album or sometimes added to the main band for tours and performances. Usually a session musician is not part of the official cast and works project by project. Our production studio has the database of experienced session musicians, playing different instruments in studio and concert environment."
+      :services-img-src-4 "img/service-4-wide.png"
+      :services-img-alt-4 "Music editing and sound design"
+
+      :services-heading-5 "Sound production"
+      :services-body-5 "A sound producer is responsible for managing the process of musical product creation, ensuring maximal commercial quality. Modern musical industry features a close interaction between the performer and the sound producer. Modern performers influence today’s fashion in music and the whole generations via strong record label companies and mass media, and the personality of a sound producer is also crucial in this process. Our experienced sound producer can make your product really unique and of high quality."
+      :services-img-src-5 "img/service-5-wide.png"
+      :services-img-alt-5 "Sound-producing"
+
+      :services-heading-6 "Music editing and sound design"
+      :services-body-6 "Sound design is the process of rearranging and managing sound elements. It is used in many areas, including cinema and TV production, theatre, live and studio performances, post production and computer game development. Our sound designer would enable the end consumer not only to hear the soundscape, but also to touch the sound. A musical editor is a specialist who influences the creation of a project in TV shows and cinema. His main task is to highlight certain emotions and drama. Our team has several music editors who are working on the most complicated and popular projects in Ukraine and Russia."
+      :services-img-src-6 "img/service-6-wide.png"
+      :services-img-alt-6 "Editing"
+
+      :portfolio "Portfolio"
+      :contacts "Contacts"
+      :contacts-city "Kiev, Ukraine"
+      :alert-success-message "Message delivered!"
+      :alert-error-message "Temporary unable to send a message. Please, send an e-mail."
+      :feedback-title "Drop us a message!"
+      :feedback-name-placeholder "Name"
+      :feedback-email-placeholder "Your e-mail"
+      :feedback-phone-placeholder "Phone number"
+      :feedback-send "Send"}
+
+ :ru {:header "Мы музыканты, композиторы, аранжировщики, звукорежиссеры, саунд-дизайнеры и просто люди, которые знают «как». Мы те, кто посредством искусства, всегда найдет путь к сердцу. От ноты к симфонии. От идеи к воплощению. От сердца к сердцу."
+      :services-header "Чем мы занимаемся"
+
+      :services-heading-0 "Организация интернет-трансляций"
+      :services-body-0 "Наша команда предоставляет услуги аудио-, видеозаписи, интернет-трансляции «под ключ». Мы поможем вам в организации трансляций мероприятий, курсов и вебинаров, благодаря чему вы сможете расширить охват и увеличить влияние на аудиторию."
+      :services-img-src-0 "img/service-0-wide.png"
+      :services-img-alt-0 "Webcasting"
+
+      :services-heading-1 "Создание аранжировки"
+      :services-body-1 "Аранжировка – искусство адаптации (переложения) музыкального произведения к иному виду исполнения, чем том, в котором ее написал автор. Иными словами, у вас есть музыкальная композиция, наработка, материал, который нужно привести к определенному виду: другому стилю, манере, другим инструментам и так далее. Для этого у нас есть специалисты, которые адаптирует все ваши мысли в законченный и профессиональный продукт."
+      :services-img-src-1 "img/service-1-wide.png"
+      :services-img-alt-1 "Arrangement"
+
+      :services-heading-2 "Написание музыкальной композиции"
+      :services-body-2 "Музыкальное произведение есть категория музыкальной эстетики, обозначающая ограниченный историческими и культурными рамками результат композиторской деятельности. Мы пишем музыку для рекламы, сериалов, кино, компьютерных и мобильных игр, приложений. Опираясь на утвержденный референс, мы можем создавать музыкальные произведения как с живыми музыкантами в студии звукозаписи, так и при помощи электронных музыкальных библиотек."
+      :services-img-src-2 "img/service-2-wide.png"
+      :services-img-alt-2 "Composing a musical piece"
+
+      :services-heading-3 "Сведение и мастеринг"
+      :services-body-3 "Сведение – стадия создания из отдельных записанных треков конечной записи, следующий после звукозаписи этап создания фонограммы, заключающийся в отборе и редактировании (иногда реставрации) исходных записанных треков, объединении их в единый проект и обработке эффектами. Наша команда звукорежиссеров работает с различным материалом: музыкальные композиции, кинофильмы, телевизионные программы, концертное сведение и многое другое."
+      :services-img-src-3 "img/service-3-wide.png"
+      :services-img-alt-3 "Sound production"
+
+      :services-heading-4 "Услуги сессионных музыкантов"
+      :services-body-4 "Сессионный музыкант в общем смысле – музыкант, которого задействуют на время записи песни или альбома, а также для концертных выступлений и гастролей в основной состав. Как правило, сессионный музыкант официально не числится в основном составе группы, а играет временно. Наш продакшн имеет базу опытных сессионных музыкантов играющих на различных инструментах, работающие в студийных и концертных условиях."
+      :services-img-src-4 "img/service-4-wide.png"
+      :services-img-alt-4 "Music editing and sound design"
+
+      :services-heading-5 "Саунд-продюсирование"
+      :services-body-5 "Саунд-продюсер – это человек руководящий и контролирующий процесс создания музыкального продукта с максимальным коммерческим качеством. В современной музыкальной индустрии существует тесная взаимосвязь между саунд-продюсером и артистом. Некоторые артисты, благодаря усилиям лейблов и масс-медиа, влияют на «сегодняшнюю» моду в музыке и на развитие целых поколений, не в последнюю очередь такое влияние зависит от личностей саунд-продюсеров."
+      :services-img-src-5 "img/service-5-wide.png"
+      :services-img-alt-5 "Sound-producing"
+
+      :services-heading-6 "Музыкальное редактирование и саунддизайн"
+      :services-body-6 "Саунд-дизайн – это процесс определения, управления звуковых элементов. Он используется в различных областях, включая кинопроизводство, ТВ-производство, театр, звукозапись, живое исполнение, искусство звука, пост-продакшн и разработку компьютерных игр. Музыкальный редактор - специалист, тесно работающий над драматургией продукта: телевизионные шоу, телесериалы, кино. Основная задача музыкального редактора - усиление эмоций, драматургии."
+      :services-img-src-6 "img/service-6-wide.png"
+      :services-img-alt-6 "Editing"
+
+      :portfolio "Примеры наших работ"
+      :contacts "Как с нами связаться"
+      :contacts-city "Киев, Украина"
+      :alert-success-message "Сообщение отправлено!"
+      :alert-error-message "Временно невозможно отправить сообщение. Напишите нам пожалуйста на e-mail."
+      :feedback-title "Напишите нам!"
+      :feedback-name-placeholder "Имя"
+      :feedback-email-placeholder "Ваш e-mail"
+      :feedback-phone-placeholder "Телефон для обратной связи"
+      :feedback-send "Отправить"}}

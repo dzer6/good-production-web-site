@@ -1,10 +1,13 @@
 (ns good.production.handler
   (:require-macros [cljs.core.async.macros :refer [go]])
   (:require
-    [reagent.core :as reagent]
     [good.production.state :as state]
+    [good.production.translation :as t]
     [cljs-http.client :as http]
     [cljs.core.async :refer [<!]]))
+
+(defn set-locale [locale]
+  (reset! state/locale locale))
 
 (defn close-alert [type]
   (reset! state/alert (assoc @state/alert type nil)))
@@ -19,14 +22,15 @@
   (reset! state/feedback-body nil))
 
 (defn send-message-handler []
-  (prn "send-message-handler")
   (go
-    (let [response (<! (http/post "http://feedback-dzer6.rhcloud.com/send" {:with-credentials? false
-                                                                            :json-params {:name @state/feedback-name
-                                                                                          :email @state/feedback-email
-                                                                                          :phone @state/feedback-phone
-                                                                                          :body @state/feedback-body}}))]
+    (let [response (<! (http/post
+                         "http://feedback-dzer6.rhcloud.com/send"
+                         {:with-credentials? false
+                          :json-params {:name @state/feedback-name
+                                        :email @state/feedback-email
+                                        :phone @state/feedback-phone
+                                        :body @state/feedback-body}}))]
       (if (= 200 (:status response))
-        (change-alert-state :success state/alert-success-message)
-        (change-alert-state :error state/alert-error-message))
+        (change-alert-state :success (t/label :alert-success-message))
+        (change-alert-state :error (t/label :alert-error-message)))
       (clean-feedback-form))))
