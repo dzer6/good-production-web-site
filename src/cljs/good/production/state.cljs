@@ -12,7 +12,7 @@
 
 (def soundcloud "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/3262970&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true")
 
-(def contacts-phone "+380953705458")
+(def contacts-phone "+380-63-247-31-37")
 
 (def contacts-email "productiongood@gmail.com")
 
