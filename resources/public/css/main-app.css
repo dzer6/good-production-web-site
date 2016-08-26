@@ -124,3 +124,11 @@ h1.portfolio {
 h1.services {
     padding-bottom: 40px;
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .row.vertical-align {
+        display: flex;
+        align-items: center;
+    }
+}

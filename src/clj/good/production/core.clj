@@ -5,12 +5,11 @@
     [compojure.core        :refer (defroutes GET POST)]
     [compojure.route       :as route]
     [compojure.handler     :as handler]
-    [ring.util.response    :as rur]
-    [clojure.tools.logging :as log]))
+    [ring.util.response    :as rur]))
 
 (defroutes my-routes
-  (GET  "/dev"      req (rur/file-response "resources/public/html/dev.html"))
-  (GET  "/prod"  req (rur/file-response "resources/public/html/prod.html"))
+  (GET  "/dev"  _ (rur/file-response "resources/public/html/dev.html"))
+  (GET  "/prod" _ (rur/file-response "resources/public/html/prod.html"))
   ;;
   (route/resources "/")
   (route/not-found "<h1>Page not found</h1>"))

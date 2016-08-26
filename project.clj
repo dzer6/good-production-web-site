@@ -4,19 +4,19 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure            "1.7.0"]
-                 [http-kit                       "2.1.19"]
-                 [compojure                      "1.4.0"]
-                 [ring                           "1.4.0"]
+  :dependencies [[org.clojure/clojure            "1.8.0"]
+                 [http-kit                       "2.2.0"]
+                 [compojure                      "1.5.1"]
+                 [ring                           "1.5.0"]
                  [org.clojure/tools.logging      "0.3.1"]
-                 [org.slf4j/slf4j-api            "1.7.12"]
-                 [org.slf4j/log4j-over-slf4j     "1.7.12"]
-                 [ch.qos.logback/logback-classic "1.1.3"]
-                 [org.clojure/clojurescript      "1.7.28"]
-                 [cljs-http                      "0.1.35"]
-                 [com.taoensso/tower             "3.0.2"]
-                 [figwheel                       "0.3.7"]
-                 [reagent                        "0.5.0"]]
+                 [org.slf4j/slf4j-api            "1.7.21"]
+                 [org.slf4j/log4j-over-slf4j     "1.7.21"]
+                 [ch.qos.logback/logback-classic "1.1.7"]
+                 [org.clojure/clojurescript      "1.9.225"]
+                 [com.taoensso/tower             "3.1.0-beta5" :exclusions [com.taoensso/encore]]
+                 [com.taoensso/encore            "2.79.1"]
+                 [figwheel                       "0.5.6"]
+                 [reagent                        "0.5.1"]]
 
   :main ^:skip-aot good.production.core
 
@@ -26,26 +26,24 @@
 
   :resources-path "resources"
 
-  :plugins [[lein-cljsbuild "1.0.6"]
-            [lein-figwheel "0.3.3"]
+  :plugins [[lein-cljsbuild "1.1.4"]
+            [lein-figwheel "0.5.6"]
             [lein-bower "0.5.1"]
-            [lein-ancient "0.6.7"]]
+            [lein-ancient "0.6.10"]]
 
-  :bower-dependencies [[react "0.13.3"]
-                       [bootstrap "3.3.4"]]
+  :bower-dependencies [[react "15.2.1"]
+                       [bootstrap "3.3.7"]]
 
   :bower {:directory "resources/public/lib"}
 
   :figwheel {:http-server-root "public" ;; this will be in resources/
-             :port 3449                 ;; default
-             :css-dirs ["resources/public/css"] }
+             :css-dirs ["resources/public/css"]}
 
   :cljsbuild {:builds
               {:main {:source-paths ["src/cljs" "src/cljs-dev"]
                       :compiler {:output-to "resources/public/app/main.js"
                                  :output-dir "resources/public/app/main"
                                  :optimizations :none
-                                 :warnings true
                                  :source-map true}}
                :test {:source-paths ["src/cljs" "test/cljs" ]
                       :compiler {:pretty-print true}}}}
