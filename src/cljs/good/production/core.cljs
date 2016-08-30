@@ -10,43 +10,44 @@
 (prn "ClojureScript appears to have loaded correctly.")
 
 (defn locale-buttons []
-  (prn "locale-buttons = " @state/locale)
   [:div.pull-right
    (if (= :en @state/locale)
-     [:div.btn-group {:role "group"}
-      ;[:button.btn.btn-primary {:type "button" :on-click #(h/set-locale :en)} "EN"]
+     [:div.btn-group.btn-group-xs {:role "group"}
+      [:button.btn.btn-primary {:type "button" :on-click #(h/set-locale :en)} "EN"]
       [:button.btn.btn-default {:type "button" :on-click #(h/set-locale :ru)} "RU"]]
-     [:div.btn-group {:role "group"}
-      ;[:button.btn.btn-default {:type "button" :on-click #(h/set-locale :en)} "EN"]
+     [:div.btn-group.btn-group-xs {:role "group"}
+      [:button.btn.btn-default {:type "button" :on-click #(h/set-locale :en)} "EN"]
       [:button.btn.btn-primary {:type "button" :on-click #(h/set-locale :ru)} "RU"]])])
 
 (defn header []
-  [:div
+  [:div.header.clearfix
    [locale-buttons]
-   [:div.jumbotron
-    [:h1 "Good Production"]
-    [:p.lead (t/label :header)]]])
+   [:img.pull-left {:src "img/good-production.png" :alt "Good Production"}]])
+
+(defn jumbotron []
+  [:div.jumbotron
+   [:p.lead (t/label :header)]])
 
 (defn featurette-left [key heading body img-src img-alt]
   [:div {:key key}
    [:div.row.featurette.vertical-align
     [:div.col-md-6
-     [:h2.featurette-heading.text-right heading]
-     [:p.lead.text-justify body]]
+     [:h3.featurette-heading.text-left heading]
+     [:p body]]
     [:div.col-md-6
-     [:img.featurette-image.img-responsive.center-block.img-circle
-      {:src img-src :alt img-alt}]]]
+     [:img.featurette-image.center-block.img-circle
+      {:src img-src :alt img-alt :width "274" :height "274"}]]]
    [:hr.featurette-divider]])
 
 (defn featurette-right [key heading body img-src img-alt]
   [:div {:key key}
    [:div.row.featurette.vertical-align
     [:div.col-md-6.col-md-push-6
-     [:h2.featurette-heading.text-left heading]
-     [:p.lead.text-justify body]]
+     [:h3.featurette-heading.text-left heading]
+     [:p body]]
     [:div.col-md-6.col-md-pull-6
-     [:img.featurette-image.img-responsive.center-block.img-circle
-      {:src img-src :alt img-alt}]]]
+     [:img.featurette-image.center-block.img-circle
+      {:src img-src :alt img-alt :width "274" :height "274"}]]]
    [:hr.featurette-divider]])
 
 (defn service-label [item index]
@@ -69,36 +70,37 @@
 
 (defn portfolio []
   [:div
-   [:iframe {:width "100%" :height "300" :scrolling "no" :frameBorder "no" :src state/soundcloud}]
+   [:iframe {:width "100%" :height "400" :scrolling "no" :frameBorder "no" :src state/soundcloud}]
    [:hr.featurette-divider]])
 
 (defn contacts []
   [:div
    [:h1.text-center.portfolio (t/label :contacts)]
    [:div.row.featurette.vertical-align
-    [:div.col-md-7.col-md-push-5.text-center
-     [:address
-      (t/label :contacts-city) [:br]
-      state/contacts-phone [:br]
-      [:a {:href (str "mailto:" state/contacts-email)} state/contacts-email]]]
+    [:div.col-md-7.col-md-push-5
+     [:div.row
+      [:div.col-md-11.col-md-push-1
+       [:address
+        (t/label :contacts-city) [:br]
+        state/contacts-phone [:br]
+        [:a {:href (str "mailto:" state/contacts-email)} state/contacts-email]]]]]
     [:div.col-md-5.col-md-pull-7
-     [:img.featurette-image.img-responsive.center-block.img-circle
-      {:src state/contacts-img-src :alt state/contacts-img-alt}]]]
+     [:img.featurette-image.center-block.img-circle
+      {:src "img/kiev.jpg" :alt "Kiev" :width "274" :height "274"}]]]
    [:hr.featurette-divider]])
 
 (defn footer []
   [:footer
-   [:p.pull-right [:a {:href "#"} "Back to top"]]
    [:p "© 2016 Good Production"]])
 
 (defn app []
-  [:div
-   [:div.container
-    [header]
-    [services]
-    [portfolio]
-    [contacts]
-    [footer]]])
+  [:div.container
+   [header]
+   [jumbotron]
+   [services]
+   [portfolio]
+   [contacts]
+   [footer]])
 
 ;;;; Init
 
