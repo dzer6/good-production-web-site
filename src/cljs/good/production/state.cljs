@@ -10,7 +10,7 @@
 
 (def contacts-phone "+380632473137")
 
-(def contacts-email "productiongood@gmail.com")
+(def contacts-email "info@good-production.com")
 
 (def alert (reagent/atom {}))
 
