@@ -75,7 +75,6 @@
 
 (defn contacts []
   [:div
-   [:h1.text-center.portfolio (t/label :contacts)]
    [:div.row.featurette.vertical-align
     [:div.col-md-7.col-md-push-5
      [:div.row
@@ -108,21 +107,20 @@
   (.getElementById js/document "app"))
 
 (defn hide-spinner []
-  (when-let [rd (root-div)]
-    (set! (.-className rd) "")))
-
-(hide-spinner)
+  (set! (.-className (root-div)) "app")) ; TODO function name not fully corresponds its functionality
 
 (defn mount-it []
   (prn "mount-it")
   (reagent/render-component
-    (fn [] [app])
-    (.-body js/document)
+    (fn []
+      (hide-spinner)
+      [app])
+    (root-div)
     (fn [])))
 
 (defn unmount-it []
   (prn "unmount-it")
   (reagent/unmount-component-at-node
-    (.-body js/document)))
+    (root-div)))
 
 (mount-it)
